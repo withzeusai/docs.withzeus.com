@@ -1,0 +1,7 @@
+---
+description: When creating custom compoennts
+globs: .jsx
+---
+When creating custom components, use inline css for styling
+
+

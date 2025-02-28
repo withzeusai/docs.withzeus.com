@@ -1,6 +1,6 @@
 ---
-description: Use every time you are creating a new .mdx file
-globs: *.mdx
+description: Use every time you are creating or editing a new .mdx file
+globs: **/*.mdx
 ---
 ## File location rules
 Create all files in the folder most relevant to the heading they are in. Use subfolders for any nested routes
@@ -8,7 +8,7 @@ Create all files in the folder most relevant to the heading they are in. Use sub
 
 ## Page rules
 ### No H1 title
-Don't use an H1 title. The file will automatically render a title from the frontmatter
+Don't use an H1 title anywhere. The file will automatically render a title from the frontmatter
 
 ### Frontmatter
 Create all .mdx files with frontmatter like the below. The title should quickly describe what the page discusses. The description should give a quick, clear, insightful description
