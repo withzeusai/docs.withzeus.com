@@ -1,8 +1,8 @@
 ---
-description: Use every time you are making changes to the docs.json file especially sidebar
+description: Use every time you are making changes to the docs.json file especially sidebar **Get started** 1. Welcome to Zeus 2. Create your first agent 3. Popular agent examples    1. Accordion with:       1. Sales        2. Marketing       3. Customer support       4. Product       5. Recruiting       6. Industry specific       7. More  **Building High Quality Agents** 1. Trigger 2. Prompt 3. Knowledge bases 4. Tools 5. Sub-agents 6. Test 7. Review 8. Advanced settings   **Other** 1. Get help 2. Feature requests 3. Deployment options 4. Security & privacy 5. FAQ
 globs: docs.json
 ---
-Follow the structure below when editing the docs.json file
+Follow the mint structure below when editing the docs.json file
 
 
 Properties

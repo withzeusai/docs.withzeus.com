@@ -1,0 +1,88 @@
+---
+description: Use every time you are making changes to an mdx file
+globs: **/*.mdx
+---
+# Zeus Documentation Style Guide
+
+## Core Principles
+
+- **Aim** Our aim with writing the docs is to help drive more usage of our platform
+- **Brevity**: Be ruthlessly concise. Eliminate unnecessary words.
+- **Clarity**: Use simple language. One idea per sentence.
+- **Structure**: Follow consistent patterns. Use clear headings.
+- **Journalistic Style**: Important information first. Details later.
+- **Bottom line up front**: Flag the important information and takeaways up front
+- **Limited Jargon**: Define technical terms on first use.
+
+## Writing Style
+
+### Voice and Tone
+- Use active voice: "The function returns a value" not "A value is returned by the function"
+- Write in present tense: "The API sends a response" not "The API will send a response"
+- Address the reader directly using second person ("you")
+- Be conversational but professional
+
+### Language
+- Avoid excessive claims ("best", "fastest", "easiest")
+- Write for a global audience (avoid idioms, colloquialisms)
+- Use inclusive language (avoid gendered terms)
+- Limit contractions to maintain clarity
+
+## Content Structure
+
+### Headings
+- Use sentence case: "Getting started with the API" not "Getting Started With The API"
+- Keep headings brief and descriptive
+- Use a logical hierarchy (H1 > H2 > H3)
+- Avoid skipping heading levels
+
+### Paragraphs
+- One main idea per paragraph
+- Get straight to the point. 
+- Start the paragraph with a clear topic sentence 
+- Use bullet points for lists of 3+ items
+- Don't include fluff like "XXX is very important" or "things are becoming increasingly XXX"
+
+### Code Examples
+- Keep examples minimal and focused
+- Include comments for complex sections
+- Use consistent formatting and indentation
+- Ensure examples are complete and functional
+
+## Formatting
+
+### Text Formatting
+- Use **bold** for UI elements and emphasis
+- Use *italics* sparingly for introduced terms
+- Use `code font` for code, commands, and file names
+- Avoid ALL CAPS except for acronyms
+
+### Lists
+- Use numbered lists for sequential steps
+- Use bullet lists for non-sequential items
+- Keep list items parallel in structure
+- Start each item in a list with an action word
+
+### Links
+- Use descriptive link text: "View pricing details" not "Click here"
+- Make it clear where links lead
+- Ensure all links are functional
+
+## Upselling
+- Include exactly one call-to-action per page
+- Place it strategically (end of relevant section or page)
+- Make the value proposition clear
+- Use action-oriented language
+
+## Images and Media
+- Include alt text for all images
+- Keep screenshots focused on relevant UI
+- Use diagrams for complex concepts
+- Optimize image sizes for fast loading
+
+## Final Checks
+- Proofread for spelling and grammar
+- Verify technical accuracy
+- Check for consistency with other documentation
+- Ensure all links work
+
