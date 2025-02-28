@@ -1,101 +1,126 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Zeus Documentation",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#3B82F6",
+    "light": "#60A5FA",
+    "dark": "#2563EB"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Documentation",
         "groups": [
           {
             "group": "Get Started",
             "pages": [
-              "introduction",
-              "quickstart",
-              "development"
+              "welcome",
+              "first-agent",
+              "next-steps"
             ]
           },
           {
-            "group": "Essentials",
+            "group": "Agents",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "agents/what-is-an-agent",
+              "agents/prompting-guide",
+              {
+                "group": "Tools",
+                "pages": [
+                  "agents/tools",
+                  "agents/tools/built-in-tools",
+                  "agents/tools/custom-tools"
+                ]
+              },
+              "agents/integrations",
+              {
+                "group": "Memory",
+                "pages": [
+                  "agents/memory",
+                  "agents/memory/short-term",
+                  "agents/memory/long-term",
+                  "agents/memory/storage"
+                ]
+              },
+              "agents/human-in-the-loop",
+              "agents/evals",
+              {
+                "group": "Observability",
+                "pages": [
+                  "agents/observability",
+                  "agents/observability/logging",
+                  "agents/observability/metrics",
+                  "agents/observability/tracing"
+                ]
+              },
+              "agents/deployment",
+              "agents/security"
+            ]
+          },
+          {
+            "group": "Other",
+            "pages": [
+              "other/support",
+              "other/feature-requests",
+              "other/deployment-options",
+              "other/privacy",
+              "other/faq"
             ]
           }
         ]
       },
       {
-        "tab": "API Reference",
+        "tab": "Examples",
         "groups": [
           {
-            "group": "API Documentation",
+            "group": "Cross-Industry Use Cases",
             "pages": [
-              "api-reference/introduction"
+              "function/sales",
+              "function/support",
+              "function/marketing",
+              "function/data"
             ]
           },
           {
-            "group": "Endpoint Examples",
+            "group": "Industry-Specific Use Cases",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete"
+              "industries/healthcare",
+              "industries/insurance",
+              "industries/finance",
+              "industries/legal",
+              "industries/retail",
+              "industries/manufacturing",
+              "industries/real-estate",
+              "industries/education",
+              "industries/pharma"
             ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "images/logo/light.svg",
+    "dark": "images/logo/dark.svg"
   },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Get Help",
+        "href": "https://forum.withzeus.com"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://dashboard.withzeus.com"
     }
   },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+  "integrations": {
+    "posthog": {
+      "apiKey": "phc_JwtPy69RskilpSsdG1RRxaDPSicnpiWZFklCzKMnrVY"
     }
   }
 }

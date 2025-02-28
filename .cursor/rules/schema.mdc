@@ -1,0 +1,587 @@
+---
+description: Use every time you are making changes to the docs.json file especially sidebar
+globs: docs.json
+---
+Follow the structure below when editing the docs.json file
+
+
+Properties
+​
+Customization
+​
+theme
+"mint" | "maple" | "palm"
+required
+The layout theme of the project. Examples: Maple, Palm,
+
+​
+name
+string
+required
+The name of the project, organization, or product Minimum length: 1
+
+​
+description
+string
+Optional description used for SEO and LLM indexing
+
+​
+Styling
+​
+colors
+object
+required
+The colors to use in your documentation. At the very least, you must define the primary color. For example:
+
+
+{
+  "colors": {
+    "primary": "#ff0000"
+  }
+}
+
+Hide Colors
+
+​
+primary
+string matching ^#([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$
+required
+The primary color of the theme
+
+Must match pattern: ^#([a-fA-F0-9]6|[a-fA-F0-9]3)$
+
+​
+light
+string matching ^#([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$
+The light color of the theme. Used for dark mode
+
+Must match pattern: ^#([a-fA-F0-9]6|[a-fA-F0-9]3)$
+
+​
+dark
+string matching ^#([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$
+The dark color of the theme. Used for light mode
+
+Must match pattern: ^#([a-fA-F0-9]6|[a-fA-F0-9]3)$
+
+​
+logo
+string or object
+The logo (for both light and dark mode)
+
+
+Hide Logo
+
+​
+light
+string
+required
+Path pointing to the light logo file to use in dark mode, including the file extension. Example: /logo.png
+
+​
+dark
+string
+required
+Path pointing to the dark logo file to use in light mode, including the file extension. Example: /logo-dark.png
+
+​
+href
+string (uri)
+The URL to redirect to when clicking the logo. If not provided, the logo will link to the homepage. Example: https://example.com
+
+​
+favicon
+string or object
+The path to your favicon file in the docs folder, including the file extension. The file will automatically be resized to appropriate favicon sizes. Can be a single file or a pair for light and dark mode. Example: /favicon.png
+
+
+Hide Favicon
+
+​
+light
+string
+required
+Path pointing to the light favicon file to use in dark mode, including the file extension. Example: /favicon.png
+
+​
+dark
+string
+required
+Path pointing to the dark favicon file to use in light mode, including the file extension. Example: /favicon-dark.png
+
+​
+styling
+object
+Styling configurations
+
+
+Hide Styling
+
+​
+eyebrows
+"section" | "breadcrumbs"
+The eyebrows style of the content. Defaults to section.
+
+​
+codeblocks
+"system" | "dark"
+The codeblock theme. Defaults to system.
+
+​
+icons
+object
+Icon library settings
+
+
+Hide Icons
+
+​
+library
+"fontawesome"
+required
+The icon library to be used. Defaults to fontawesome.
+
+​
+fonts
+object
+
+Hide Fonts
+
+​
+family
+string
+required
+The font family, such as “Open Sans”, “Playfair Display”
+
+​
+weight
+number
+The font weight, such as 400, 700. Precise font weights such as 550 are supported for variable fonts.
+
+​
+source
+string (uri)
+The font source, such as https://mintlify-assets.b-cdn.net/fonts/Hubot-Sans.woff2
+
+​
+format
+"woff" | "woff2"
+The font format, can be one of woff, woff2
+
+​
+heading
+object
+
+Show Heading
+
+​
+body
+object
+
+Show Body
+
+​
+appearance
+object
+Light / dark mode toggle settings
+
+
+Hide Appearance
+
+​
+default
+"system" | "light" | "dark"
+The default light/dark mode. Defaults to system
+
+​
+strict
+boolean
+Whether to hide the light / dark mode toggle. Defaults to true.
+
+​
+background
+object
+Background color and decoration settings
+
+
+Hide Background
+
+​
+image
+string or object
+
+Show Image
+
+​
+decoration
+"gradient" | "grid" | "windows"
+The background decoration of the theme
+
+​
+color
+object
+The colors of the background
+
+
+Show Color
+
+​
+Structure
+​
+navbar
+object
+Navbar content and settings
+
+
+Hide Navbar
+
+​
+links
+array of object
+The links in the navbar
+
+
+Show Links
+
+​
+primary
+object
+
+Show Primary
+
+​
+navigation
+object
+required
+The navigation structure of the content
+
+
+Hide Navigation
+
+​
+global
+object
+Add external links that will appear on all sections and pages irregardless of navigation nesting
+
+
+Show Global
+
+​
+languages
+array of object
+Organizing by languages
+
+​
+versions
+array of object
+Organizing by versions
+
+​
+tabs
+array of object
+Organizing by tabs
+
+​
+anchors
+array of object
+Organizing by anchors
+
+​
+groups
+array of object
+Organizing by groups
+
+​
+pages
+array of string or object
+An array of page paths or groups
+
+​
+footer
+object
+Footer configurations
+
+
+Hide Footer
+
+​
+socials
+object
+An object in which each key is the name of a social media platform, and each value is the url to your profile. For example:
+
+
+{
+  "x": "https://x.com/mintlify"
+}
+Valid property names: bluesky, discord, facebook, github, hacker-news, instagram, linkedin, medium, podcast, reddit, slack, telegram, threads, twitter, website, x, youtube
+
+​
+links
+array of object
+The links to be displayed in the footer
+
+
+Hide Links
+
+​
+header
+string
+The header title of the column
+
+Minimum length: 1
+
+​
+items
+array of object
+required
+The links to be displayed in the column
+
+
+Show Items
+
+​
+banner
+object
+Banner configurations
+
+
+Hide Banner
+
+​
+content
+string
+The content of the banner. This can be a string of text or a markdown string. For example:
+
+
+{
+  "content": "🚀 Banner is live! [Learn more](mdc:mintlify.com)"
+}
+​
+dismissible
+boolean
+Whether the banner is dismissible. Defaults to false.
+
+​
+redirects
+array of object
+
+Hide Redirects
+
+​
+source
+string
+required
+​
+destination
+string
+required
+​
+permanent
+boolean
+​
+API Configurations
+​
+api
+object
+API reference configuration and playground settings
+
+
+Hide Api
+
+​
+openapi
+string or array or object
+A string or an array of strings of absolute or relative urls pointing to the OpenAPI file(s)
+
+
+Show Openapi
+
+​
+playground
+object
+Configurations for the API playground
+
+
+Show Playground
+
+​
+examples
+object
+Configurations for the autogenerated API examples
+
+
+Show Examples
+
+​
+mdx
+object
+Configurations for API pages generated from MDX files
+
+
+Show Mdx
+
+​
+SEO & Search
+​
+seo
+object
+SEO indexing configurations
+
+
+Hide Seo
+
+​
+metatags
+object
+Meta tags added to every page. Must be a valid key-value pair
+
+​
+indexing
+"navigable" | "all"
+Specify which pages to be indexed by search engines. Setting navigable indexes pages that are set in navigation, all indexes all pages. Defaults to navigable.
+
+​
+search
+object
+Search display settings
+
+
+Hide Search
+
+​
+prompt
+string
+The prompt to be displayed in the search bar placeholder
+
+​
+Integrations
+​
+integrations
+object
+Configurations for official integrations
+
+
+Hide Integrations
+
+​
+amplitude
+object
+
+Show Amplitude
+
+​
+clearbit
+object
+
+Show Clearbit
+
+​
+fathom
+object
+
+Show Fathom
+
+​
+frontchat
+object
+
+Show Frontchat
+
+​
+ga4
+object
+
+Show Ga4
+
+​
+gtm
+object
+
+Show Gtm
+
+​
+heap
+object
+
+Show Heap
+
+​
+hotjar
+object
+
+Show Hotjar
+
+​
+intercom
+object
+
+Show Intercom
+
+​
+koala
+object
+
+Show Koala
+
+​
+logrocket
+object
+
+Show Logrocket
+
+​
+mixpanel
+object
+
+Show Mixpanel
+
+​
+osano
+object
+
+Show Osano
+
+​
+pirsch
+object
+
+Show Pirsch
+
+​
+posthog
+object
+
+Show Posthog
+
+​
+plausible
+object
+
+Show Plausible
+
+​
+segment
+object
+
+Show Segment
+
+​
+Best Practices
+When configuring your docs.json file, consider these best practices:
+
+Keep the configuration organized by grouping related settings together
+Use meaningful names for groups and pages in your navigation structure
+Provide complete paths for all assets (logos, favicons, etc.)
+Test your configuration in both light and dark modes
+Verify all external links and integrations are correctly configured
+Use appropriate color contrasts for accessibility
+Configure SEO settings for better search engine visibility
+​
+Validation
+The docs.json file is validated against a JSON schema to ensure proper configuration. You can reference the schema by including:
+
+
+{
+  "$schema": "https://mintlify.com/docs.json"
+}
+​
