@@ -86,3 +86,7 @@ globs: **/*.mdx
 - Check for consistency with other documentation
 - Ensure all links work
 
+
+## More
+See https://developers.google.com/style for inspiration
+

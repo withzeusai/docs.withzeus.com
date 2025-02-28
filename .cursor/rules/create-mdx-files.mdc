@@ -1,0 +1,20 @@
+---
+description: Use every time you are creating a new .mdx file
+globs: *.mdx
+---
+## File location rules
+Create all files in the folder most relevant to the heading they are in. Use subfolders for any nested routes
+
+
+## Page rules
+### No H1 title
+Don't use an H1 title. The file will automatically render a title from the frontmatter
+
+### Frontmatter
+Create all .mdx files with frontmatter like the below. The title should quickly describe what the page discusses. The description should give a quick, clear, insightful description
+
+---
+title: "Get Started"
+description: "Use Zeus to build high quality AI agents"
+---
+

@@ -1,0 +1,12 @@
+a[href^="https://mintlify.com/"] {
+    display: none;
+}
+
+/* body {
+    font-family: 'Avenir', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+} */
+
+
+h1 {
+    font-size: 200% !important;
+}

@@ -4,99 +4,58 @@
   "name": "Zeus Documentation",
   "colors": {
     "primary": "#3B82F6",
-    "light": "#60A5FA",
-    "dark": "#2563EB"
+    "light": "#f5f5f5",
+    "dark": "#0f0f0f"
   },
   "favicon": "/favicon.svg",
+  "background": {
+    "color": {
+      "light": "#f5f5f5",
+      "dark": "#0f0f0f"
+    }
+  },
   "navigation": {
-    "tabs": [
+    "groups": [
       {
-        "tab": "Documentation",
-        "groups": [
+        "group": "Get Started",
+        "pages": [
+          "welcome",
+          "first-agent",
+          "popular"
+        ]
+      },
+      {
+        "group": "Agent Concepts",
+        "pages": [
+          "agents/trigger",
+          "agents/prompt",
+          "agents/knowledge-bases",
+          "agents/tools",
+          "agents/sub-agents",
+          "agents/tests",
+          "agents/review",
           {
-            "group": "Get Started",
+            "group": "Advanced Settings",
             "pages": [
-              "welcome",
-              "first-agent",
-              "next-steps"
-            ]
-          },
-          {
-            "group": "Agents",
-            "pages": [
-              "agents/what-is-an-agent",
-              "agents/prompting-guide",
-              {
-                "group": "Tools",
-                "pages": [
-                  "agents/tools",
-                  "agents/tools/built-in-tools",
-                  "agents/tools/custom-tools"
-                ]
-              },
-              "agents/integrations",
-              {
-                "group": "Memory",
-                "pages": [
-                  "agents/memory",
-                  "agents/memory/short-term",
-                  "agents/memory/long-term",
-                  "agents/memory/storage"
-                ]
-              },
-              "agents/human-in-the-loop",
-              "agents/evals",
-              {
-                "group": "Observability",
-                "pages": [
-                  "agents/observability",
-                  "agents/observability/logging",
-                  "agents/observability/metrics",
-                  "agents/observability/tracing"
-                ]
-              },
-              "agents/deployment",
-              "agents/security"
-            ]
-          },
-          {
-            "group": "Other",
-            "pages": [
-              "other/support",
-              "other/feature-requests",
-              "other/deployment-options",
-              "other/privacy",
-              "other/faq"
+              "agents/memory"
             ]
           }
         ]
       },
       {
-        "tab": "Examples",
-        "groups": [
-          {
-            "group": "Cross-Industry Use Cases",
-            "pages": [
-              "function/sales",
-              "function/support",
-              "function/marketing",
-              "function/data"
-            ]
-          },
-          {
-            "group": "Industry-Specific Use Cases",
-            "pages": [
-              "industries/healthcare",
-              "industries/insurance",
-              "industries/finance",
-              "industries/legal",
-              "industries/retail",
-              "industries/manufacturing",
-              "industries/real-estate",
-              "industries/education",
-              "industries/pharma"
-            ]
-          }
+        "group": "Human approvals",
+        "pages": [
+          "approvals"
+        ]
+      },
+      {
+        "group": "Other",
+        "pages": [
+          "other/get-help",
+          "other/feature-requests",
+          "other/deploying-on-prem",
+          "other/security-privacy",
+          "other/faq"
         ]
       }
     ]
