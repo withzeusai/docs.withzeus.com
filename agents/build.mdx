@@ -21,27 +21,49 @@ We recommend starting with OpenAI's GPT-4o-mini. It's cheap and fast. If you're 
 
 ## Prompts
 
-The Prompts are the instructions that will be used to guide the agent. The system prompt is the initial prompt that will be used to guide the agent. The user prompt is the prompt that will be used to guide the agent during the conversation.
+The Prompts are the instructions that will be used to define what the agent does. Think of the prompt like giving the agent a job description and also a personality. 
+
+There are three types of prompts:
+1. System Prompt: This is the initial prompt that will be used to guide the agent.
+2. User Prompt: The messages end-users will send to the agent
+3. Assistant Prompt: The responses from the agent
+
+You will most likely only configure the system prompt, however, you can configure the user and assistant prompts if you'd like.
+
+There is a whole science to writing good prompts. We will write up a guide soon. In the meantime, we suggest you do some Googling on "Prompt Engineering".
+
+<Tip>How do you avoid agent hallucinations? A good rule of thumb is to be more specific than less. If you can imagine a scenario where the agent could interpret your instructions in a way that is not what you intended, then you should be more specific. </Tip>
+
 <img src="/images/platform/old/Build-Prompt.png" />
 
 ## Tools
+Tools are the actions that the agent can perform. Tools are bundled up into packages called "Toolkits". Examples of Toolkits include "Gmail", "Salesforce", "Web Search", and "Zendesk". For example, the Gmail Toolkit has a tool for reading emails, a tool for sending emails, a tool for adding a label to an email etc. 
+
+The agent will decide which Toolkit to use based on the user's request. For example, if the user asks the agent to send an email, the agent will use the Gmail Toolkit.
+
+Tools are what make agents "really powerful". Without tools, the agent would be a "dumb" AI that can only answer questions based on the prompts. With tools, the agent can interact with the real world and perform actions on your behalf.
+
 
 <img src="/images/platform/old/Build-Tools.png" />
 
 ## Knowledge
+Knowledge defines what the agent knows. "Knowledge" is actually a tool, however, it's such an advanced and commonly used tool that we separate it out. 
 
+You can give the agent knowledge by uploading documents (like powerpoints, pdfs, etc), URLs (like your company's help center or a a company wiki), or even create your own content. The agent will use the knowledge to answer specific user questions. 
+
+For example, if you are building a customer support agent, you can upload your product manuals, sales materials, or even your company's policies. The agent will use the knowledge to answer these specific questions.
 <img src="/images/platform/old/Build-Knowledge.png" />
 
 ## Voice
-
+(Coming soon)
 <img src="/images/platform/old/Build-Voice.png" />
 
 ## Handoffs
-
+(Coming soon)
 <img src="/images/platform/old/Build-Handoffs.png" />
 
 ## Guardrails
-
+(Coming soon)
 <img src="/images/platform/old/Build-Guardrails.png" />
 
 
