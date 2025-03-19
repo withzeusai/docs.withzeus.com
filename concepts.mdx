@@ -10,24 +10,39 @@ Zeus defines 4 key steps in the agent building process:
 
 ## Build
 
-The Build step is where you create the agent. This is where you define what the agent does, what it knows, and what it can and can't do. 
+The Build step is where you create the agent. This is where you define what the agent does, what it knows, and what it can and can't do. You configure the agent with prompts, tools, knowledge, voice, handoffs, and guardrails (discussed in next section)
 
 Think of building your agent like writing instructions for a smart junior in college. In order to get the best results, it's important to be really specific. 
 
+<Tip>Why would you build an agent versus just hire a junior in college? Well, your agent works 24/7, speaks every language, is infinitely scalable, incredibly patient, and way cheaper. </Tip>
 
-
-Why would you build an agent versus just hire a junior in college? Well, your agent works 24/7, speaks every language, is infinitely scalable, incredibly patient, and way cheaper. 
+<img src="/images/platform/build-prompt-1-header.png" />
 
 ## Test
 
-The Test step is where you evaluate your agent's performance against real world test-cases. For instance, if you're evaluating a customer support agent, you might create a test-case that simulates a customer who is angry and frustrated to see how the agent responds. 
+The Test step is where you see how your agent performs against real world scenarios. For instance, if you're testing a customer support agent, you might want to see how your agent responses when a customer is angry and frustrated. 
 
-The Test step is not mandatory, however, it is highly recommended. In order to feel confident that your agent is performing well and not hallucinating, you should test it against a variety of test-cases.
+The Test step is not mandatory, however, it is highly recommended. You will likely want to change your agent over time. Each time you make a change, you want to make sure you're not breaking existing functionality. Tests help you feel confident that your agent is performing well!
+
+<img src="/images/platform/test-run-uuid-2-header.png" />
 
 ## Deploy
 
-The Deploy step is where you deploy the agent. This is the most important step in the process.
+The Deploy step is where you configure how and when the agent runs. 
+
+You can add our prebuilt chatbot widget to your website. You can also trigger your agent to run by various events including:
+1. a timer (called a "schedule")
+2. an event in a 3rd party app (like every time you receive an email)
+3. an API call
+4. a phone call to a specific phone number
+
+
+
+
+<img src="/images/platform/deploy-chatbot-2-header.png" />
 
 ## Monitor
 
-The Monitor step is where you monitor the agent. This is the most important step in the process.
+The Monitor step is where you see details from every time the agent runs. You get granular details into what the user said, what the agent said, which tools it used, how long it all took, and how much it cost.
+
+<img src="/images/platform/observe-message-history-2-header.png" />

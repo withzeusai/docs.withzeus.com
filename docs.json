@@ -33,7 +33,7 @@
               "agents/build",
               "agents/test",
               "agents/deploy",
-              "agents/observe"
+              "agents/monitor"
             ]
           },
           {
