@@ -15,43 +15,42 @@
     }
   },
   "navigation": {
-    "groups": [
+    "tabs": [
       {
-        "group": "Get Started",
-        "pages": [
-          "welcome",
-          "build-your-first-agent",
-          "human-approvals",
-          "popular"
-        ]
-      },
-      {
-        "group": "Core Concepts",
-        "pages": [
-          "concepts/agents",
-          "concepts/trigger",
-          "concepts/prompt",
-          "concepts/knowledge-bases",
-          "concepts/tools",
-          "concepts/sub-agents",
-          "concepts/tests",
-          "concepts/review",
+        "tab": "Documentation",
+        "groups": [
           {
-            "group": "Advanced Settings",
+            "group": "Get Started",
             "pages": [
-              "agents/memory"
+              "welcome",
+              "build-your-first-agent",
+              "concepts"
+            ]
+          },
+          {
+            "group": "Building Agents",
+            "pages": [
+              "agents/build",
+              "agents/test",
+              "agents/deploy",
+              "agents/observe"
+            ]
+          },
+          {
+            "group": "Other",
+            "pages": [
+              "other/get-help",
+              "other/feature-requests",
+              "other/deployment-options",
+              "other/security-privacy"
             ]
           }
         ]
       },
       {
-        "group": "Other",
+        "tab": "API Reference",
         "pages": [
-          "other/get-help",
-          "other/feature-requests",
-          "other/deploying-on-prem",
-          "other/security-privacy",
-          "other/faq"
+          "api"
         ]
       }
     ]

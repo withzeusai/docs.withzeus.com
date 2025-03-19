@@ -6,36 +6,41 @@ Follow these simple steps to deploy your first AI automation.
 
 <Steps>
   <Step title="Login or Sign Up">
-    Click [here](https://app.withzeus.com) to login/sign up to Zeus.
-    <Screenshot />
+    Click [here](https://console.withzeus.com) to login/sign up to Zeus.
+
+
+    (If you don't have access yet, join the waitlist from our main page [withzeus.com](https://withzeus.com/))
   </Step>
   <Step title="Create a New Agent">
     Click "Create Agent"
-    <Screenshot />
+    {/* <Screenshot /> */}
   </Step>
-  <Step title="Define What Your Agent Will Do">
-    Describe exactly what you want your agent to accomplish. Include what should trigger the agent to run, what tasks you want the agent to do, and the apps you want it to connect with.
-    
+  <Step title="Give what your agent does">
+    Describe exactly what you want your agent to accomplish each times it runs
+
     **Example**
-    > *Every morning at 7am send me a prep email with a summary of everyone I'm meeting with that day. Research each person's LinkedIn, my notes on them in Salesforce, my previous email interactions with them, and recent news about the company they work for.*
-
-<Tip>Yes, this is so simple but it actually works! Think of an agent like your own personal assistant: it can search the web, interact with the apps you use, respond to questions, and reason through complex problems. It's up to you to describe what you want it to do.</Tip>
-
-    <Screenshot />
+    > *You are a customer support agent. You help customers resolve account issues, answer product questions, track orders, and manage refunds. You are polite and friendly.*
 
   </Step>
-  <Step title="Test Your Agent">
-    Click "Test" to simulate your agent and validate that it does everything you expect. We will help you keep tweaking the agent configuration until it works exactly as you want it to.
+  <Step title="Add some tools">
+    Click the "tools" tab. Add any tools your agent will need to accomplish its task like Gmail, Zendesk, Salesforce, or Slack. The agent will be able to take action in these apps.
     <Screenshot />
   </Step>
-  <Step title="Deploy Your Agent">
-    Toggle the "Live" switch to turn on your agent. Your agent will run every time it is triggered. You can view more details about each agent's run in the "Review" tab.
+  <Step title="Add some knowledge">
+    Click the "knowledge" tab. Add any knowledge your agent will need to accomplish its tasks. This can include uploaded files, websites it should be able to read, or pre-written questions and answers that the agent can use.
+    <Screenshot />
+  </Step>
+  <Step title="Play">
+    Now your agent should have everything it needs. Start playing with the agent in the chatbot on the right. Or click the "voice" tab and start talking to it! 
+    <Screenshot />
+  </Step>
+  <Step title="Deploy">
+    Click the "deploy" tab. Choose what you want to trigger your agent. This can be a set schedule, an API, a 3rd party app (like every time you receive an email), or a phone call to a specific phone number
     <Screenshot />
   </Step>
 </Steps>
 
 
-### This seems great, but how do I avoid an agent doing something I don't want it to?
-Agents are powerful, but they can be tricky to get right. That's why we built [**human approvals**](/human-approvals). Human Approvals allows you to build powerful agents that automate your work, but configure them to ask for your approval before taking specific actions.
+That's it! Your agent is live and will start running automatically.
 
-<Card title="Build Agents with Human Approval →" href="/human-approvals" />
+<Card title="Understand Zeus' core concepts →" href="/concepts" />
